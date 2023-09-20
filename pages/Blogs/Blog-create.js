@@ -16,7 +16,7 @@ const RichTextEditor = dynamic(() => import('@mantine/rte'), {
   ssr: false,
 })
 
-const ProjectCreate = () => {
+const AddBlog = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -26,7 +26,7 @@ const ProjectCreate = () => {
     });
   };
 
-  // Select Priority 
+
   const [priority, setPriority] = React.useState('');
   const handleChange = (event) => {
     setPriority(event.target.value);
@@ -34,7 +34,7 @@ const ProjectCreate = () => {
 
   return (
     <>
-      {/* Page title */}
+     
       <div className={styles.pageTitle}>
         <h1>Blogs</h1>
         <ul>
@@ -169,4 +169,4 @@ const ProjectCreate = () => {
   )
 }
 
-export default ProjectCreate;
+export default AddBlog;
