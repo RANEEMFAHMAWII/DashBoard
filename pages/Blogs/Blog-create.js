@@ -5,10 +5,7 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import AddIcon from "@mui/icons-material/Add";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+
 import CategoriesSelect from '@/components/Projects/ProjectCreate/CategoriesSelect';
 import Link from 'next/link';
 import styles from '@/styles/PageTitle.module.css';
@@ -39,12 +36,12 @@ const ProjectCreate = () => {
     <>
       {/* Page title */}
       <div className={styles.pageTitle}>
-        <h1>Project Create</h1>
+        <h1>Blogs</h1>
         <ul>
           <li>
             <Link href="/">Dashboard</Link>
           </li>
-          <li>Project Create</li>
+          <li>Blogs</li>
         </ul>
       </div>
 
@@ -64,7 +61,7 @@ const ProjectCreate = () => {
             mb: '15px'
           }}
         >
-          Create Project
+          Create Blogs
         </Typography>
 
         <Box component="form" noValidate onSubmit={handleSubmit}>
@@ -78,7 +75,7 @@ const ProjectCreate = () => {
                   mb: "12px",
                 }}
               >
-                Project Name
+                title
               </Typography>
               <TextField
                 autoComplete="project-name"
@@ -94,55 +91,7 @@ const ProjectCreate = () => {
               />
             </Grid>
 
-            <Grid item xs={12} md={12} lg={6}>
-              <Typography
-                as="h5"
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  mb: "12px",
-                }}
-              >
-                Start Date
-              </Typography>
-              <TextField
-                autoComplete="start-date"
-                name="startDate"
-                required
-                fullWidth
-                id="startDate"
-                type="date"
-                autoFocus
-                InputProps={{
-                  style: { borderRadius: 8 },
-                }}
-              />
-            </Grid>
-
-            <Grid item xs={12} md={12} lg={6}>
-              <Typography
-                as="h5"
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  mb: "12px",
-                }}
-              >
-                End Date
-              </Typography>
-              <TextField
-                autoComplete="end-date"
-                name="endDate"
-                required
-                fullWidth
-                id="endDate"
-                type="date"
-                autoFocus
-                InputProps={{
-                  style: { borderRadius: 8 },
-                }}
-              />
-            </Grid>
+           
 
             <Grid item xs={12} md={12} lg={12}>
               <Typography
@@ -153,7 +102,7 @@ const ProjectCreate = () => {
                   mb: "12px",
                 }}
               >
-                Project Description
+                Blog description
               </Typography>
               
               <RichTextEditor
@@ -167,58 +116,9 @@ const ProjectCreate = () => {
               />
             </Grid>
 
-            <Grid item xs={12} md={12} lg={6}>
-              <Typography
-                as="h5"
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  mb: "12px",
-                }}
-              >
-                Budget
-              </Typography>
-              <TextField
-                autoComplete="budget"
-                name="budget"
-                required
-                fullWidth
-                id="budget"
-                label="Enter rate"
-                autoFocus
-                InputProps={{
-                  style: { borderRadius: 8 },
-                }}
-              />
-            </Grid>
+           
 
-            <Grid item xs={12} md={12} lg={6}>
-              <Typography
-                as="h5"
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  mb: "12px",
-                }}
-              >
-                Priority Status
-              </Typography>
-              
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">Priority</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={priority}
-                  label="Priority"
-                  onChange={handleChange}
-                >
-                  <MenuItem value={10}>High</MenuItem>
-                  <MenuItem value={20}>Medium</MenuItem>
-                  <MenuItem value={30}>Low</MenuItem>
-                </Select>
-              </FormControl>
-            </Grid>
+          
    
             <Grid item xs={12} md={12} lg={6}>
               <Typography
@@ -229,28 +129,14 @@ const ProjectCreate = () => {
                   mb: "12px",
                 }}
               >
-                Categories
+                Auther
               </Typography>
               
-              {/* CategoriesSelect */}
+            
               <CategoriesSelect />
             </Grid>
 
-            <Grid item xs={12} md={12} lg={6}>
-              <Typography
-                as="h5"
-                sx={{
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  mb: "12px",
-                }}
-              >
-                Members
-              </Typography>
-              
-             
-              <MemberSelect />
-            </Grid>
+          <MemberSelect />
 
             <Grid item xs={12} textAlign="end">
               <Button

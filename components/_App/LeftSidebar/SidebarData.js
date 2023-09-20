@@ -70,7 +70,7 @@ export const SidebarData = [
  
   {
     title: "Editors",
-    path: "/forms/editors/",
+    path: "/Doc/EditorArea",
     icon: <CheckBoxOutlineBlankIcon />,
     iconClosed: <KeyboardArrowRightIcon />,
     iconOpened: <KeyboardArrowDownIcon />,
@@ -79,7 +79,7 @@ export const SidebarData = [
   },
   {
     title: "Invoice",
-    path: "/Invoice/InvoiceLists",
+    path: "/Invoice/Invoice/InvoiceLists",
     icon: <ContentCopyIcon />,
     iconClosed: <KeyboardArrowRightIcon />,
     iconOpened: <KeyboardArrowDownIcon />,
