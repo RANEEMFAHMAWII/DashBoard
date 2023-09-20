@@ -74,23 +74,12 @@ export const SidebarData = [
  
   {
     title: "Editors",
-    path: "/forms/form-layouts/",
+    path: "/forms/editors/",
     icon: <CheckBoxOutlineBlankIcon />,
     iconClosed: <KeyboardArrowRightIcon />,
     iconOpened: <KeyboardArrowDownIcon />,
 
-    subNav: [
-    
-      {
-        title: "Advanced Elements",
-        path: "/forms/advanced-elements/",
-      },
-      {
-        title: "Editors",
-        path: "/forms/editors/",
-      },
-     
-    ],
+  
   },
   {
     title: "Invoice",
