@@ -69,24 +69,7 @@ export const SidebarData = [
 
    
   },
-  {
-    title: "Analytics",
-    path: "/analytics/customers/",
-    icon: <AddchartIcon />,
-    iconClosed: <KeyboardArrowRightIcon />,
-    iconOpened: <KeyboardArrowDownIcon />,
-
-    subNav: [
-      {
-        title: "Customers",
-        path: "/analytics/customers/",
-      },
-      {
-        title: "Reports",
-        path: "/analytics/reports/",
-      },
-    ],
-  },
+  
  
  
   {
