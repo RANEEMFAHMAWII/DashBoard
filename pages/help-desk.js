@@ -14,7 +14,7 @@ import Activity from "@/components/Dashboard/HelpDesk/Activity";
 export default function HelpDesk() {
   return (
     <>
-      {/* Page title */}
+    
       <div className={styles.pageTitle}>
         <h1>Help/Support Desk</h1>
         <ul>
@@ -25,12 +25,12 @@ export default function HelpDesk() {
         </ul>
       </div>
 
-      {/* Features */}
+   
       <Features />
 
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
         <Grid item xs={12} md={12} lg={12} xl={8}>
-          {/* TicketsStatus */}
+        
           <TicketsStatus />
         </Grid>
 
@@ -47,27 +47,27 @@ export default function HelpDesk() {
             columnSpacing={{ xs: 1, sm: 2, md: 2 }}
           >
             <Grid item xs={12} md={6} lg={6}>
-              {/* AverageSpeedOfAnswer */}
+        
               <AverageSpeedOfAnswer />
 
-              {/* TimeToResolveComplaint */}
+            
               <TimeToResolveComplaint />
             </Grid>
 
             <Grid item xs={12} md={6} lg={6}>
-              {/* SupportStatus */}
+           
               <SupportStatus />
             </Grid>
           </Grid>
         </Grid>
 
         <Grid item xs={12} md={12} lg={12} xl={4}>
-          {/* Activity */}
+       
           <Activity />
         </Grid>
       </Grid>
 
-      {/* AgentPerformance */}
+  
       <AgentPerformance />
     </>
   );
