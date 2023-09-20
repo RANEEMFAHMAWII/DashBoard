@@ -9,12 +9,8 @@ import LockIcon from "@mui/icons-material/Lock";
 import SettingsIcon from "@mui/icons-material/Settings";
 import PostAddIcon from "@mui/icons-material/PostAdd";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import AddchartIcon from "@mui/icons-material/Addchart";
 import CopyAllIcon from "@mui/icons-material/CopyAll";
-import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
-import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-
 export const SidebarData = [
   {
     title: "Dashboard",
@@ -62,7 +58,7 @@ export const SidebarData = [
   },
   {
     title: "Team",
-    path: "/projects/TeamUsers",
+    path: "/Team/TeamUsers",
     icon: <CopyAllIcon />,
     iconClosed: <KeyboardArrowRightIcon />,
     iconOpened: <KeyboardArrowDownIcon />,
