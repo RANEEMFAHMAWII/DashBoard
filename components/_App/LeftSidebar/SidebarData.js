@@ -102,7 +102,7 @@ export const SidebarData = [
   },
   {
     title: "Blogs",
-    path: "/Blogs/index",
+    path: "pages/Blogs/index",
     icon: <SettingsIcon />,
     iconClosed: <KeyboardArrowRightIcon />,
     iconOpened: <KeyboardArrowDownIcon />,

@@ -73,7 +73,7 @@ BootstrapDialogTitle.propTypes = {
   children: PropTypes.node,
   onClose: PropTypes.func.isRequired,
 };
-// End Create new user Modal
+
 
 function UsersList(props) {
   const theme = useTheme();

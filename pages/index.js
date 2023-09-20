@@ -21,14 +21,12 @@ export default function eCommerce() {
     <>
       {/* Page title */}
       <div className={styles.pageTitle}>
-        <h1>eCommerce</h1>
+        <h1>Dashboard</h1>
         <ul>
           <li>
             <Link href="/">Dashboard</Link>
           </li>
-          <li>
-            eCommerce
-          </li>
+         
         </ul>
       </div>
 
